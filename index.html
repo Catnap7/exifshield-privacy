@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ExifShield privacy policy and support. JPEG cleanup stays on your Android device.">
+  <title>ExifShield Privacy &amp; Support</title>
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="#top"><img src="icon.png" alt=""><span><b>ExifShield</b><small>Photo Privacy</small></span></a>
+    <nav><a href="#privacy">Privacy</a><a href="#files">Your files</a><a href="#support">Support</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div>
+        <span class="eyebrow">PRIVACY, IN PLAIN LANGUAGE</span>
+        <h1>Your photos never leave your device.</h1>
+        <p class="lede">ExifShield inspects JPEG metadata and creates privacy-clean copies locally. The app has no account, advertising, analytics, backend, or Internet permission.</p>
+        <p class="meta">Effective July 15, 2026 · Developer: Dev Jang</p>
+      </div>
+      <aside class="summary"><b>PHOTO BOUNDARY · LOCAL</b><ul><li>No photo uploads</li><li>Originals stay untouched</li><li>No Internet permission</li></ul></aside>
+    </section>
+
+    <section class="facts">
+      <article><b>01</b><h2>Processing stays local</h2><p>Selected JPEG files are read and cleaned on your Android device.</p></article>
+      <article><b>02</b><h2>No broad photo access</h2><p>You choose specific JPEGs with Android's system document picker.</p></article>
+      <article><b>03</b><h2>No ads or analytics</h2><p>V1 contains no ad, analytics, account, tracking, or cloud SDK.</p></article>
+    </section>
+
+    <article class="policy">
+      <section id="overview">
+        <span class="eyebrow">01 / OVERVIEW</span>
+        <h2>What ExifShield does</h2>
+        <p>ExifShield is an Android utility for JPEG photo privacy. It lets you choose up to 12 JPEG files, view metadata such as GPS coordinates, capture time, device make and model, software, camera settings, and creator fields, then create cleaned copies in <code>Pictures/ExifShield</code>.</p>
+        <p>The original files are not edited. ExifShield removes privacy-bearing EXIF, XMP, IPTC, and JPEG comment containers from each copy without decoding or recompressing the compressed image scan. A minimal orientation value may be retained so the cleaned photo displays correctly.</p>
+        <div class="notice"><b>Format boundary:</b> version 1 supports JPEG files only, up to 60 MB each. It does not claim to clean PNG, HEIC, RAW, video, or another format.</div>
+      </section>
+
+      <section id="privacy">
+        <span class="eyebrow">02 / DATA</span>
+        <h2>Personal information collected by us: none</h2>
+        <p>Dev Jang does not receive, store, sell, or share your photos, metadata, file names, app activity, device identifiers, location, contact information, or diagnostics through ExifShield. The app has no developer-operated server, user account, advertising service, analytics service, crash-reporting service, or cloud synchronization.</p>
+        <div class="notice"><b>Network boundary:</b> the Android release does not request the Internet permission. Photo inspection and cleanup happen on the device.</div>
+        <h3>Metadata shown in the app</h3>
+        <p>A selected photo may already contain personal information, including precise GPS coordinates, capture time, device details, or creator information. ExifShield reads these fields only to show them to you and verify the cleaned copy. They are not transmitted to the developer.</p>
+        <h3>Temporary processing</h3>
+        <p>ExifShield decodes a small preview for the inspection card and reads the selected JPEG while creating a clean copy. Temporary data is held by the app process as needed and is not retained on a developer server.</p>
+        <h3>Third-party services</h3>
+        <p>ExifShield v1 does not integrate ads, analytics, social login, payments, or another third-party data service. Distribution and updates through Google Play are governed by Google Play's own terms and privacy practices.</p>
+      </section>
+
+      <section id="files">
+        <span class="eyebrow">03 / YOUR FILES</span>
+        <h2>You choose every input and output</h2>
+        <ul class="choices">
+          <li><b>Selection:</b> Android's system document picker grants access only to the JPEG files you select.</li>
+          <li><b>Originals:</b> selected source files are opened for reading and are not modified or deleted.</li>
+          <li><b>Clean copies:</b> outputs are saved in <code>Pictures/ExifShield</code> until you move or delete them.</li>
+          <li><b>Sharing:</b> Android's chooser opens only after you tap Share. You decide the destination, whose privacy policy then applies.</li>
+          <li><b>Uninstall:</b> removing ExifShield does not automatically delete clean copies already saved in Pictures.</li>
+        </ul>
+        <h3>Permissions</h3>
+        <p>ExifShield does not request broad photo-library, storage, location, camera, microphone, contacts, nearby-device, notification, or advertising permission. Android may add a package-scoped internal receiver permission used by the Flutter framework; it does not grant access to another app's data.</p>
+        <h3>Security, retention, and children</h3>
+        <p>There is no developer-server retention period because ExifShield does not transmit files or metadata to a developer server. ExifShield is a general-audience utility and does not knowingly collect personal information from children or adults.</p>
+      </section>
+
+      <section id="support">
+        <span class="eyebrow">04 / SUPPORT</span>
+        <h2>Help and common questions</h2>
+        <h3>Where are cleaned copies saved?</h3>
+        <p>Open your gallery or file manager and look in <code>Pictures/ExifShield</code>. Output names include <code>_private_</code> and a timestamp.</p>
+        <h3>Why is a photo shown as already clean?</h3>
+        <p>Some JPEGs contain no sensitive fields that ExifShield recognizes. You may still create a copy.</p>
+        <h3>Why does the app keep orientation?</h3>
+        <p>When needed, ExifShield keeps only the minimal orientation tag so a rotated photo displays correctly. Location, device, capture time, creator, XMP, IPTC, and comment data are still removed.</p>
+        <h3>Contact</h3>
+        <p>Email <a href="mailto:jjw33063@gmail.com">jjw33063@gmail.com</a> with “ExifShield Support” or “ExifShield Privacy” in the subject. Include only what is needed; do not attach a private photo unless necessary and intentional.</p>
+        <h3>Policy updates</h3>
+        <p>If ExifShield's data practices or features change, this page will show a new effective date before the corresponding release when required.</p>
+      </section>
+    </article>
+  </main>
+  <footer><span>ExifShield: Photo Privacy</span><span>Share the photo. Not the trail.</span><a href="mailto:jjw33063@gmail.com">jjw33063@gmail.com</a></footer>
+</body>
+</html>
